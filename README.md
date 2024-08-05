@@ -30,7 +30,7 @@ Retrieval-Augmented Generation (RAG) is a framework that combines the strengths 
 
 ### Prerequisites
 
-- Python 3.7 or later
+- Python 3.9 
 - [Anaconda](https://www.anaconda.com/products/individual) (optional but recommended for managing environments)
 
 ### Clone the Repository
@@ -38,3 +38,21 @@ Retrieval-Augmented Generation (RAG) is a framework that combines the strengths 
 ```sh
 git clone https://github.com/yourusername/chat-with-wikipedia-docs.git
 cd chat-with-wikipedia-docs
+```
+### Install Dependencies
+create a virtual environment to manage dependencies:
+```sh
+conda create -n mychatbot python=3.8
+conda activate mychatbot
+```
+### Install the required Python packages:
+```sh
+pip install -r requirements.txt
+```
+### Add Hugging Face and OpenAI API Keys
+Create a file named secrets.toml in the .streamlit directory with the following content:
+```sh
+# .streamlit/secrets.toml
+openai_key = "your_openai_api_key"
+huggingface_token = "your_hugging_face_api_token"
+```
