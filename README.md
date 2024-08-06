@@ -53,6 +53,6 @@ pip install -r requirements.txt
 Create a file named secrets.toml in the .streamlit directory with the following content:
 ```sh
 # .streamlit/secrets.toml
-openai_key = "your_openai_api_key"
+
 huggingface_token = "your_hugging_face_api_token"
 ```
